@@ -11,15 +11,6 @@ Die Platine steuert bis zu **2 unabhängige Lüfterausgänge** (Kanal A und B), 
 - **Leistungsschalter** (High-Side-Switch für Ein/Aus)
 - **Tacho-Eingang** (galvanisch isoliert über Optokoppler)
 
-## Unterstützte Lüftertypen
-
-| Konfiguration | Beschreibung |
-|---------------|-------------|
-| 2x Einzellüfter | z.B. Fawas AirSolitaire 160 -- ein Lüfter pro Kanal, unabhängig steuerbar |
-| 1x Push-Pull-Lüfter | z.B. Maico PP B30 -- beide PWM-Kanäle steuern ein Gerät (S1/S2 für Richtungsumkehr) |
-
-Die Konfiguration erfolgt über die ETS-Software (KNX-Parametrierung).
-
 ## Anschlüsse
 
 ### Lüfterklemmen
