@@ -1,6 +1,6 @@
 # REG1-FanAktor-2x (V0.2)
 
-Applikationsplatine (Addon-Board) für das [OpenKNX REG1](https://github.com/OpenKNX/OpenKNX-REG1) Modulsystem zur Ansteuerung von dezentralen Lüftungsgeräten über den KNX-Bus.
+Applikationsplatine (Addon-Board) für das [OpenKNX REG1](https://github.com/OpenKNX/OpenKNX-REG1) Modulsystem zur Ansteuerung von bis zu zwei Lüftern.
 
 ## Überblick
 
