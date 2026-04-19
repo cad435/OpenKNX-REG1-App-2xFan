@@ -54,9 +54,28 @@ Die Lüfter werden extern mit 12...24V DC über P1 versorgt.
 
 Jeder Kanal hat einen PWM-Ausgang zur Drehzahlregelung der Lüfter. Die Ausgänge sind galvanisch vom KNX-Bus getrennt ausgeführt.
 
-### Leistungsschalter (Power Ein/Aus)
+### PWM Pull-Up Konfiguration (CN1...CN6)
 
-Jeder Kanal hat einen High-Side-Switch zum An- und Ausschalten der Supply-Spannung für den Lüfter. Dies dient rein zur Eliminierung der Standbyleistung.
+Die Pull-Up-Konfiguration für die *PWM-Steuerung* wird über Lötbrücken eingestellt:
+
+| Lüfter-Typ | Kanal A | Kanal B | Beschreibung |
+|-------------|---------|---------|-------------|
+| Interner Pull-Up vorhanden | Keine Brücke | Keine Brücke | Standardlüfter, keine externe Beschaltung nötig |
+| Pull-Up auf 5V nötig | CN2 brücken | CN5 brücken | Pull-Up auf 5V |
+| Pull-Up auf VCC (12-24V) nötig | CN1 brücken | CN4 brücken | Pull-Up auf Versorgungsspannung |
+| Push-Pull Eingang | CN3 brücken, R1 entfernen | CN6 brücken, R3 entfernen | Für Lüfter mit Push-Pull-PWM-Eingang |
+
+### ⚠️⚠️ Hinweis: ⚠️⚠️
+
+Standard PC Lüfter und frei verkäufliche Typen haben zu 99% einen Integrierten Pullup. Standardmäßig ist keine der CNx Lötbrücken gesetzt, sodass diese Lüfter "out-of-the-box" funktionieren.
+
+Bei Integrierten Anlagen (zum Beispiel dezentralen Lüftersystemen in der Gebäudetechnik) werden auch mal OEM-Varianten OHNE integrierte Pullups verbaut. Es empfiehlt sich ein genauer Blick auf die exakte Typennummer! Oftmals ist nur der Suffix ein Hinweis darauf. 
+
+Von diesen Lüftern findet man in der Regel auch kein frei verfügbares Datenblatt. Hier muss man etwas Googlen welches die spezifische Referenzsspannung des jeweiligen Lüfterherstellers ist (bei ebm-Papst zum Beispiel meistens (!) 5V). Bei anderen Herstellern sind hier ggf. mit 3.3V oder anderem zu rechnen.
+
+Eine Haftung für Schäden ist ausgeschlossen!
+
+
 
 ### Tacho-Eingänge
 
@@ -64,17 +83,9 @@ Jeder Kanal hat einen galvanisch getrennten Tacho-Eingang.
 
 Typische Lüfter liefern 2 Pulse pro Umdrehung.
 
-### Tacho Pull-Up Konfiguration (CN1...CN6)
+### Leistungsschalter (Power Ein/Aus)
 
-Die Pull-Up-Konfiguration für die Tacho-Eingänge wird über Lötbrücken eingestellt:
-
-| Lüfter-Typ | Kanal A | Kanal B | Beschreibung |
-|-------------|---------|---------|-------------|
-| Interner Pull-Up vorhanden | Keine Brücke | Keine Brücke | Standard, keine externe Beschaltung nötig |
-| Pull-Up auf 5V nötig | CN2 brücken | CN5 brücken | 5V-Referenz als Pull-Up |
-| Pull-Up auf VCC (12-24V) nötig | CN1 brücken | CN4 brücken | Versorgungsspannung als Pull-Up |
-| 5V Push-Pull Eingang | CN3 brücken, R1 entfernen | CN6 brücken, R3 entfernen | Für Lüfter mit Push-Pull-Tacho-Ausgang |
-
+Jeder Kanal hat einen High-Side-Switch zum An- und Ausschalten der Supply-Spannung für den Lüfter. Dies dient rein zur Eliminierung der Standbyleistung.
 
 ## Firmware
 
