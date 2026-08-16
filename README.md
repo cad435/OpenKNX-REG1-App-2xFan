@@ -89,13 +89,25 @@ Jeder Kanal hat einen High-Side-Switch zum An- und Ausschalten der Supply-Spannu
 
 ## Firmware
 
-Die zugehörige Firmware basiert auf dem [OpenKNX](https://github.com/OpenKNX) Framework:
-- **OAM-FanControl** (Original): [github.com/mrspieb/OAM-FanControl](https://github.com/mrspieb/OAM-FanControl)
-- **OFM-FanControl** (Original): [github.com/mrspieb/OFM-FanControl](https://github.com/mrspieb/OFM-FanControl)
+Die zugehörige Firmware basiert auf dem [OpenKNX](https://github.com/OpenKNX) Framework. Diese
+Platine ist die **Referenz-Hardware** der Applikation — sie wird dort als primäre Variante
+geführt und ist die einzige mit Tacho-Eingang:
 
-> **Hinweis:** Die Unterstützung für die REG1-FanAktor-2x Hardware (Reg1-Boarddefinition, Fawas AirSolitaire Lüfterklasse, Vollsteuerung, Tacho-Drehzahlmessung) ist aktuell nur in den folgenden Forks verfügbar:
-> - [github.com/cad435/OAM-FanControl](https://github.com/cad435/OAM-FanControl)
-> - [github.com/cad435/OFM-FanControl](https://github.com/cad435/OFM-FanControl)
+- **OAM-FanControl**: [github.com/cad435/OAM-FanControl](https://github.com/cad435/OAM-FanControl) (Branch `dev`)
+- **OFM-FanControl**: [github.com/cad435/OFM-FanControl](https://github.com/cad435/OFM-FanControl) (Branch `dev`)
+
+Die Boardauswahl erfolgt zur Compile-Zeit, weil sich PWM-Polarität und Anzahl der Ausgänge
+zwischen den Varianten unterscheiden. Für diese Platine ist das Environment
+`develop_RP2040` zuständig.
+
+> **Herkunft:** Ursprung der Applikation sind
+> [mrspieb/OAM-FanControl](https://github.com/mrspieb/OAM-FanControl) und
+> [mrspieb/OFM-FanControl](https://github.com/mrspieb/OFM-FanControl) für die
+> [HW-FanControl](https://github.com/mrspieb/HW-FanController)-Platine. Die oben genannten
+> Repositories sind Forks davon und inzwischen neu aufgebaut: Master/Slave-Gruppenbetrieb,
+> reversierende Lüfter mit bipolarer Stellgröße auf einem Ausgang, Volumenstromkennlinie,
+> Blockiererkennung. Das KO-Layout ist dadurch **nicht** mit der ursprünglichen Applikation
+> kompatibel.
 
 ## Dateien
 
