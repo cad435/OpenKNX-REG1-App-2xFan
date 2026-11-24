@@ -8,3 +8,8 @@ _autosave-*
 fp-info-cache
 *.kicad_sch-bak
 *.kicad_pcb-bak
+
+# LTspice: Simulationsergebnisse (werden aus der .asc neu erzeugt)
+*.raw
+Simulations/*.log
+Simulations/*.net
