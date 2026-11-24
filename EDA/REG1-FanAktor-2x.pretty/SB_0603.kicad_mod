@@ -1,0 +1,201 @@
+(footprint "SB_0603"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Solder Jumper, 2-pole, open")
+	(property "Reference" "REF**"
+		(at 2.845832 -0.161359 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "7594c276-39af-49d7-bb01-044ed10ebc32")
+		(effects
+			(font
+				(size 0.96012 0.96012)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "SB_0603"
+		(at 1.217545 1.895682 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b665e1be-7b2a-4ec9-b4ad-463301f5ada4")
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fa188ce9-bb05-4993-9782-1198809b2c76")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Solder Jumper, 2-pole, open"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68eb72c5-6ead-4f71-81a4-98fa1569b87b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "REG1-FanAktor-2x.kicad_sch")
+	(attr smd allow_soldermask_bridges)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -0.66675 0) (xy -0.31115 0) (xy 0.29845 -0.6096) (xy -0.66675 -0.6096)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "95b056eb-800f-4dcc-a708-80d797d1016a")
+	)
+	(fp_poly
+		(pts
+			(xy -0.66675 0) (xy -0.31115 0) (xy 0.29845 0.6096) (xy -0.66675 0.6096)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "8758f47e-08d4-4160-a160-be47d6a427ff")
+	)
+	(fp_poly
+		(pts
+			(xy 0.60325 -0.6096) (xy 0.34925 -0.6096) (xy -0.26035 0) (xy 0.34925 0.6096) (xy 0.60325 0.6096)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "f0690d1a-20f5-44ea-9367-9f06269c6e6b")
+	)
+	(fp_poly
+		(pts
+			(xy -0.73025 0) (xy -0.47625 0) (xy 0.03175 -0.508) (xy -0.73025 -0.508)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "0b878b65-7068-41bd-a77d-e0fcf6d474d7")
+	)
+	(fp_poly
+		(pts
+			(xy -0.73025 0) (xy -0.47625 0) (xy 0.03175 0.508) (xy -0.73025 0.508)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "3513885b-804c-45a0-bc05-2a6cccb2ecd3")
+	)
+	(fp_poly
+		(pts
+			(xy 0.66675 -0.508) (xy 0.41275 -0.508) (xy -0.09525 0) (xy 0.41275 0.508) (xy 0.66675 0.508)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "2ebf12b7-3de7-4e70-b008-e3efb7890b92")
+	)
+	(fp_rect
+		(start -1.5 -0.75)
+		(end 1.5 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "66e3196e-28f2-41fd-b008-15bfedd84f50")
+	)
+	(pad "1" smd custom
+		(at 0.66675 -0.508 90)
+		(size 0.000001 0.000001)
+		(layers "F.Cu")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy 0 -0.254) (xy -0.508 -0.762) (xy -1.016 -0.254) (xy -1.016 0)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "f9d300ec-25be-48d3-8986-fcdd2c23c44f")
+	)
+	(pad "1" smd rect
+		(at 0.85725 0 180)
+		(size 0.8128 1.016)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1884ca81-d21f-46a8-b9fd-5502d3c6eaca")
+	)
+	(pad "2" smd rect
+		(at -0.85725 0 180)
+		(size 0.762 1.016)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fd35770c-108b-4e16-a2bb-d7c5d35b950d")
+	)
+	(pad "2" smd custom
+		(at -0.73025 0 90)
+		(size 0.000001 0.000001)
+		(layers "F.Cu")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy 0 0.254) (xy -0.508 0.762) (xy -0.508 0)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(xy 0 0) (xy 0 0.254) (xy 0.508 0.762) (xy 0.508 0)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "8b911825-c473-4c1d-9d71-9bf8fbcf053a")
+	)
+	(embedded_fonts no)
+)

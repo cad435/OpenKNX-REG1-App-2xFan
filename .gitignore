@@ -1,0 +1,10 @@
+# KiCad: lokale Einstellungen, Sperr- und Sicherungsdateien
+*.kicad_prl
+*.lck
+.history/
+*-backups/
+_autosave-*
+\#auto_saved_files\#
+fp-info-cache
+*.kicad_sch-bak
+*.kicad_pcb-bak

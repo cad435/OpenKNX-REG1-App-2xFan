@@ -1,0 +1,140 @@
+(footprint "SOT23_Normal"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "N-MOSFET transistor, gate/drain/source")
+	(property "Reference" "REF**"
+		(at 1.25897 3.055299 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4180f4c0-317d-4b9c-91e3-ef087aed0ae1")
+		(effects
+			(font
+				(size 0.96012 0.96012)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "SOT23_Normal"
+		(at -3.115129 -3.368802 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b1583bbd-8864-4ec6-8418-dee535fcc7f2")
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "72646993-84e3-40a3-bf34-952a0f9a7bce")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "N-MOSFET transistor, gate/drain/source"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b747f3e-6057-4fcf-a1e8-81c42d5d3128")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "REG1-FanAktor-2x.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0.70001 -1.49999)
+		(end -0.19999 -1.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "720da9df-9c83-498b-a428-e9c0cd1b2688")
+	)
+	(fp_line
+		(start 0.70001 -0.7)
+		(end 0.70001 -1.49999)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8caf3952-9f5c-460d-9661-59630090e15a")
+	)
+	(fp_line
+		(start 0.70001 1.5)
+		(end -0.2 1.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b781a903-5451-490f-96cd-8806fc2f0589")
+	)
+	(fp_line
+		(start 0.70001 1.5)
+		(end 0.70001 0.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2e5531c1-9762-4dfe-8f32-5c0058f92927")
+	)
+	(fp_circle
+		(center 1.35 -0.85)
+		(end 1.225 -0.85)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "c0dae346-47d9-40af-a9b5-b506a8082cf1")
+	)
+	(fp_rect
+		(start -1.94999 -1.75)
+		(end 1.95001 1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b8126bcb-5fc1-4d54-93e7-227719b4dc46")
+	)
+	(pad "1" smd rect
+		(at -1.12499 -0.95 90)
+		(size 0.6 1.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c84cd15b-ff4a-4e28-b42d-33514b91c6db")
+	)
+	(pad "2" smd rect
+		(at 1.125 0 90)
+		(size 0.6 1.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "23eb5bf2-43dc-44bd-86ad-b147769714ba")
+	)
+	(pad "3" smd rect
+		(at -1.12499 0.95 90)
+		(size 0.6 1.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "52b0dcae-c64f-42ae-8782-252133f6eebf")
+	)
+	(embedded_fonts no)
+)

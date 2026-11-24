@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "REG1-FanAktor-2x") (type "KiCad") (uri "${KIPRJMOD}/REG1-FanAktor-2x.pretty") (options "") (descr "Project footprints"))
+)
