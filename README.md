@@ -93,8 +93,11 @@ Die zugehörige Firmware basiert auf dem [OpenKNX](https://github.com/OpenKNX) F
 Platine ist die **Referenz-Hardware** der Applikation — sie wird dort als primäre Variante
 geführt und ist die einzige mit Tacho-Eingang:
 
-- **OAM-FanControl**: [github.com/cad435/OAM-FanControl](https://github.com/cad435/OAM-FanControl) (Branch `dev`)
-- **OFM-FanControl**: [github.com/cad435/OFM-FanControl](https://github.com/cad435/OFM-FanControl) (Branch `dev`)
+- **OAM-FanControl**: [github.com/OpenKNX/OAM-FanControl](https://github.com/OpenKNX/OAM-FanControl/tree/cad435/main) (Branch `cad435/main`)
+- **OFM-FanControl**: [github.com/OpenKNX/OFM-FanControl](https://github.com/OpenKNX/OFM-FanControl/tree/cad435/main) (Branch `cad435/main`)
+
+Entwickelt wird in den Forks [cad435/OAM-FanControl](https://github.com/cad435/OAM-FanControl) und
+[cad435/OFM-FanControl](https://github.com/cad435/OFM-FanControl) (Branch `main`).
 
 Die Boardauswahl erfolgt zur Compile-Zeit, weil sich PWM-Polarität und Anzahl der Ausgänge
 zwischen den Varianten unterscheiden. Für diese Platine ist das Environment

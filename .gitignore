@@ -9,6 +9,13 @@ fp-info-cache
 *.kicad_sch-bak
 *.kicad_pcb-bak
 
+# MCAD: vorerst nicht hochladen (warten auf Rückmeldung)
+MCAD/
+
+# SolidCraft: Sicherungs- und Sperrdateien
+*.sc.bak
+.~*.lock
+
 # LTspice: Simulationsergebnisse (werden aus der .asc neu erzeugt)
 *.raw
 Simulations/*.log
